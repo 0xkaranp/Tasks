@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Web + Quiz + API + Carousel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Web Project</h1>
+  </header>
+
+  <!-- Section 1: Joke Fetcher -->
+  <section class="joke-section">
+    <h2>Get a Random Joke</h2>
+    <button onclick="getJoke()">Tell me a joke!</button>
+    <p id="joke"></p>
+  </section>
+
+  <!-- Section 2: Quiz -->
+  <section class="quiz-section">
+    <h2>Quiz Time</h2>
+    <p id="question">Loading...</p>
+    <div id="options">
+      <button id="btn0" onclick="checkAnswer(0)"></button>
+      <button id="btn1" onclick="checkAnswer(1)"></button>
+      <button id="btn2" onclick="checkAnswer(2)"></button>
+    </div>
+  </section>
+
+  <!-- Section 3: Image Carousel -->
+  <section class="carousel-section">
+    <h2>Image Carousel</h2>
+    <div class="carousel-container">
+      <button onclick="prev()">⟨</button>
+     <img id="carousel" alt="Carousel Image">
+
+      <button onclick="next()">⟩</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
